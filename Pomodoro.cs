@@ -24,19 +24,19 @@ namespace Pomodoro
 
         static void Start(int time)
         {
-            int currentTime = 25;
+            int pomodoro = 25;
 
-            while (currentTime != time)
+            while (pomodoro != time)
             {
                 Console.Clear();
 
-                currentTime--;
-                Console.WriteLine(currentTime); //1500s são 25m
+                pomodoro--;
+                Console.WriteLine(pomodoro); //1500s são 25m
                 Thread.Sleep(60000); // milissegundos
             }
             Console.Clear();
 
-            Console.WriteLine("StopWatch  finalizado... Dê uma pausa!");
+            Console.WriteLine("Pomodoro  finalizado... Dê uma pausa!");
 
             Thread.Sleep(2000);
         }
